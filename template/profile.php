@@ -5,11 +5,9 @@ include "views/layouts/head.php"
 ?>
 <!doctype html>
 <html lang="en">
-<!-- [Head] start -->
 
 <head>
   <title>Account Profile 1 | Light Able Admin & Dashboard Template</title>
-  <!-- [Meta] -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,13 +45,10 @@ include "views/layouts/head.php"
       <div class="loader-fill"></div>
     </div>
   </div>
-  <!-- [ Pre-loader ] End -->
-  <!-- [ Sidebar Menu ] start -->
   <nav class="pc-sidebar">
     <div class="navbar-wrapper">
       <div class="m-header">
         <a href="../dashboard/index.html" class="b-brand text-primary">
-          <!-- ========   Change your logo from here   ============ -->
           <img src="../assets/images/logo-dark.svg" alt="logo image" class="logo-lg" />
           <span class="badge bg-brand-color-2 rounded-pill ms-2 theme-version">v1.2.0</span>
         </a>
