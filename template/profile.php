@@ -1293,26 +1293,6 @@ include "views/layouts/head.php"
                   </a>
                   <a
                     class="nav-link list-group-item list-group-item-action"
-                    id="user-set-information-tab"
-                    data-bs-toggle="pill"
-                    href="#user-set-information"
-                    role="tab"
-                    aria-controls="user-set-information"
-                    aria-selected="false">
-                    <span class="f-w-500"><i class="ph-duotone ph-clipboard-text m-r-10"></i>Personal Information</span>
-                  </a>
-                  <a
-                    class="nav-link list-group-item list-group-item-action"
-                    id="user-set-account-tab"
-                    data-bs-toggle="pill"
-                    href="#user-set-account"
-                    role="tab"
-                    aria-controls="user-set-account"
-                    aria-selected="false">
-                    <span class="f-w-500"><i class="ph-duotone ph-notebook m-r-10"></i>Account Information</span>
-                  </a>
-                  <a
-                    class="nav-link list-group-item list-group-item-action"
                     id="user-set-passwort-tab"
                     data-bs-toggle="pill"
                     href="#user-set-passwort"
@@ -1414,183 +1394,86 @@ include "views/layouts/head.php"
                       </ul>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane fade" id="user-set-information" role="tabpanel" aria-labelledby="user-set-information-tab">
                   <div class="card">
                     <div class="card-header">
-                      <h5>Personal Information</h5>
+                      <h5>Active Sessions</h5>
                     </div>
                     <div class="card-body">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="mb-3">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control" value="Anshan" />
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0 pt-0">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="me-2">
+                              <div class="d-flex align-items-center">
+                                <div class="avtar bg-light-primary">
+                                  <i class="ph-duotone ph-desktop f-24"></i>
+                                </div>
+                                <div class="ms-2">
+                                  <p class="mb-1">Celt Desktop</p>
+                                  <p class="mb-0 text-muted">4351 Deans Lane</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-link-danger">Logout</button>
                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="mb-3">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-control" value="Handgun" />
+                        </li>
+                        <li class="list-group-item px-0 pb-0">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div class="me-2">
+                              <div class="d-flex align-items-center">
+                                <div class="avtar bg-light-primary">
+                                  <i class="ph-duotone ph-device-tablet-camera f-24"></i>
+                                </div>
+                                <div class="ms-2">
+                                  <p class="mb-1">Moon Tablet</p>
+                                  <p class="mb-0 text-muted">4185 Michigan Avenue</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-link-danger">Logout</button>
                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="mb-3">
-                            <label class="form-label">Country</label>
-                            <input type="text" class="form-control" value="New York" />
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="mb-3">
-                            <label class="form-label">Zip code</label>
-                            <input type="text" class="form-control" value="956754" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="mb-0">
-                            <label class="form-label">Experience</label>
-                            <select class="form-control">
-                              <option>Startup</option>
-                              <option>2 year</option>
-                              <option>3 year</option>
-                              <option selected>4 year</option>
-                              <option>5 year</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   <div class="card">
-                    <div class="card-header">
-                      <h5>Social Network</h5>
+                    <div class="card-body text-end">
+                      <button class="btn btn-outline-dark me-2">Clear</button>
+                      <button class="btn btn-primary">Update Profile</button>
+                      <button class="btn btn-danger" style="margin-right: 10px;">Delete Account</button> <!-- APONER UN MODAL DE "SEGURO QUE" -->
                     </div>
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="flex-grow-1 me-3">
-                          <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0">
-                              <div class="avtar avtar-xs btn-light-twitter">
-                                <i class="fab fa-twitter f-16"></i>
-                              </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-0">Twitter</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="flex-shrink-0">
-                          <button class="btn btn-link-primary">Connect</button>
-                        </div>
-                      </div>
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="flex-grow-1 me-3">
-                          <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0">
-                              <div class="avtar avtar-xs btn-light-facebook">
-                                <i class="fab fa-facebook-f f-16"></i>
-                              </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-0">Facebook <small class="text-muted f-w-400">/Anshan Handgun</small></h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="flex-shrink-0">
-                          <button class="btn btn-link-danger">Remove</button>
-                        </div>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <div class="flex-grow-1 me-3">
-                          <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0">
-                              <div class="avtar avtar-xs btn-light-linkedin">
-                                <i class="fab fa-linkedin-in f-16"></i>
-                              </div>
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-0">Linkedin</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="flex-shrink-0">
-                          <button class="btn btn-link-primary">Connect</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header">
-                      <h5>Contact Information</h5>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="mb-3">
-                            <label class="form-label">Contact Phone</label>
-                            <input type="text" class="form-control" value="(+99) 9999 999 999" />
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="mb-3">
-                            <label class="form-label">Email <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" value="demo@sample.com" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="mb-3">
-                            <label class="form-label">Portfolio Url</label>
-                            <input type="text" class="form-control" value="https://demo.com" />
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="mb-0">
-                            <label class="form-label">Address</label>
-                            <textarea class="form-control">3379  Monroe Avenue, Fort Myers, Florida(33912)</textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-end btn-page">
-                    <div class="btn btn-outline-secondary">Cancel</div>
-                    <div class="btn btn-primary">Update Profile</div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Required Js -->
-            <script src="../assets/js/plugins/popper.min.js"></script>
-            <script src="../assets/js/plugins/simplebar.min.js"></script>
-            <script src="../assets/js/plugins/bootstrap.min.js"></script>
-            <script src="../assets/js/fonts/custom-font.js"></script>
-            <script src="../assets/js/pcoded.js"></script>
-            <script src="../assets/js/plugins/feather.min.js"></script>
+                <script src="../assets/js/plugins/popper.min.js"></script>
+                <script src="../assets/js/plugins/simplebar.min.js"></script>
+                <script src="../assets/js/plugins/bootstrap.min.js"></script>
+                <script src="../assets/js/fonts/custom-font.js"></script>
+                <script src="../assets/js/pcoded.js"></script>
+                <script src="../assets/js/plugins/feather.min.js"></script>
 
 
-            <script>
-              layout_change('light');
-            </script>
+                <script>
+                  layout_change('light');
+                </script>
 
-            <script>
-              layout_sidebar_change('light');
-            </script>
+                <script>
+                  layout_sidebar_change('light');
+                </script>
 
-            <script>
-              change_box_container('false');
-            </script>
+                <script>
+                  change_box_container('false');
+                </script>
 
-            <script>
-              layout_caption_change('true');
-            </script>
+                <script>
+                  layout_caption_change('true');
+                </script>
 
-            <script>
-              layout_rtl_change('false');
-            </script>
+                <script>
+                  layout_rtl_change('false');
+                </script>
 
-            <script>
-              preset_change('preset-1');
-            </script>
+                <script>
+                  preset_change('preset-1');
+                </script>
 
 </body>
 
