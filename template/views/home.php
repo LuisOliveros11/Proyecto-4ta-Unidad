@@ -33,7 +33,7 @@
             <div class="row align-items-center">
               <div class="col-md-12">
                 <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="../views/home.php">Home</a></li>
                   <li class="breadcrumb-item"><a href="javascript: void(0)">Dashboard</a></li>
                   <li class="breadcrumb-item" aria-current="page">Home</li>
                 </ul>
@@ -53,7 +53,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="card statistics-card-1 overflow-hidden">
               <div class="card-body">
-                <img src="<?= BASE_PATH ?>assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" />
+                <img src="../assets/images/widget/img-status-4.svg" alt="img" class="img-fluid img-bg" />
                 <h5 class="mb-4">Daily Sales</h5>
                 <div class="d-flex align-items-center mt-3">
                   <h3 class="f-w-300 d-flex align-items-center m-b-0">$249.95</h3>
@@ -76,7 +76,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="card statistics-card-1 overflow-hidden">
               <div class="card-body">
-                <img src="<?= BASE_PATH ?>assets/images/widget/img-status-5.svg" alt="img" class="img-fluid img-bg" />
+                <img src="../assets/images/widget/img-status-5.svg" alt="img" class="img-fluid img-bg" />
                 <h5 class="mb-4">Monthly Sales</h5>
                 <div class="d-flex align-items-center mt-3">
                   <h3 class="f-w-300 d-flex align-items-center m-b-0">$249.95</h3>
@@ -99,7 +99,7 @@
           <div class="col-md-4 col-sm-12">
             <div class="card statistics-card-1 overflow-hidden bg-brand-color-3">
               <div class="card-body">
-                <img src="<?= BASE_PATH ?>assets/images/widget/img-status-6.svg" alt="img" class="img-fluid img-bg" />
+                <img src="../assets/images/widget/img-status-6.svg" alt="img" class="img-fluid img-bg" />
                 <h5 class="mb-4 text-white">Yearly Sales</h5>
                 <div class="d-flex align-items-center mt-3">
                   <h3 class="text-white f-w-300 d-flex align-items-center m-b-0">$249.95</h3>
@@ -192,9 +192,9 @@
           <div class="col-md-6 col-xl-4">
             <div class="card statistics-card-1 overflow-hidden">
               <div class="card-body">
-                <img src="<?= BASE_PATH ?>assets/images/widget/img-status-7.svg" alt="img" class="img-fluid img-bg" />
+                <img src="../assets/images/widget/img-status-7.svg" alt="img" class="img-fluid img-bg" />
                 <div class="d-flex align-items-center">
-                  <img src="<?= BASE_PATH ?>assets/images/widget/img-facebook.svg" alt="img" class="img-fluid" />
+                  <img src="../assets/images/widget/img-facebook.svg" alt="img" class="img-fluid" />
                   <div class="flex-grow-1 ms-3">
                     <p class="mb-0 text-muted">Total Likes</p>
                     <div class="d-inline-flex align-items-center">
@@ -219,9 +219,9 @@
           <div class="col-md-6 col-xl-4">
             <div class="card statistics-card-1 overflow-hidden">
               <div class="card-body">
-                <img src="<?= BASE_PATH ?>assets/images/widget/img-status-8.svg" alt="img" class="img-fluid img-bg" />
+                <img src="../assets/images/widget/img-status-8.svg" alt="img" class="img-fluid img-bg" />
                 <div class="d-flex align-items-center">
-                  <img src="<?= BASE_PATH ?>assets/images/widget/img-google.svg" alt="img" class="img-fluid" />
+                  <img src="../assets/images/widget/img-google.svg" alt="img" class="img-fluid" />
                   <div class="flex-grow-1 ms-3">
                     <p class="mb-0 text-muted">Total Likes</p>
                     <div class="d-inline-flex align-items-center">
@@ -246,9 +246,9 @@
           <div class="col-md-12 col-xl-4">
             <div class="card statistics-card-1 overflow-hidden">
               <div class="card-body">
-                <img src="<?= BASE_PATH ?>assets/images/widget/img-status-9.svg" alt="img" class="img-fluid img-bg" />
+                <img src="../assets/images/widget/img-status-9.svg" alt="img" class="img-fluid img-bg" />
                 <div class="d-flex align-items-center">
-                  <img src="<?= BASE_PATH ?>assets/images/widget/img-twitter.svg" alt="img" class="img-fluid" />
+                  <img src="../assets/images/widget/img-twitter.svg" alt="img" class="img-fluid" />
                   <div class="flex-grow-1 ms-3">
                     <p class="mb-0 text-muted">Total Likes</p>
                     <div class="d-inline-flex align-items-center">
@@ -397,7 +397,7 @@
                         <td>
                           <div class="d-inline-block align-middle">
                             <img
-                              src="<?= BASE_PATH ?>assets/images/user/avatar-1.jpg"
+                              src="../assets/images/user/avatar-1.jpg"
                               alt="user image"
                               class="img-radius align-top m-r-15"
                               style="width: 40px"
@@ -420,7 +420,7 @@
                         <td>
                           <div class="d-inline-block align-middle">
                             <img
-                              src="<?= BASE_PATH ?>assets/images/user/avatar-2.jpg"
+                              src="../assets/images/user/avatar-2.jpg"
                               alt="user image"
                               class="img-radius align-top m-r-15"
                               style="width: 40px"
@@ -443,7 +443,7 @@
                         <td>
                           <div class="d-inline-block align-middle">
                             <img
-                              src="<?= BASE_PATH ?>assets/images/user/avatar-3.jpg"
+                              src="../assets/images/user/avatar-3.jpg"
                               alt="user image"
                               class="img-radius align-top m-r-15"
                               style="width: 40px"
@@ -466,7 +466,7 @@
                         <td>
                           <div class="d-inline-block align-middle">
                             <img
-                              src="<?= BASE_PATH ?>assets/images/user/avatar-4.jpg"
+                              src="../assets/images/user/avatar-4.jpg"
                               alt="user image"
                               class="img-radius align-top m-r-15"
                               style="width: 40px"
@@ -498,11 +498,11 @@
     
     <?php include "layouts/footer.php" ?> 
 
-    <script src="<?= BASE_PATH ?>assets/js/plugins/apexcharts.min.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/plugins/jsvectormap.min.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/plugins/world.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/plugins/world-merc.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/pages/dashboard-default.js"></script>
+    <script src="../assets/js/plugins/apexcharts.min.js"></script>
+    <script src="../assets/js/plugins/jsvectormap.min.js"></script>
+    <script src="../assets/js/plugins/world.js"></script>
+    <script src="../assets/js/plugins/world-merc.js"></script>
+    <script src="../assets/js/pages/dashboard-default.js"></script>
 
     <?php include "layouts/scripts.php" ?> 
 

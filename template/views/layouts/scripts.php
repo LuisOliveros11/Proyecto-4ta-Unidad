@@ -1,10 +1,10 @@
 <!-- Required Js -->
-    <script src="<?= BASE_PATH ?>assets/js/plugins/popper.min.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/plugins/simplebar.min.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/plugins/bootstrap.min.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/fonts/custom-font.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/pcoded.js"></script>
-    <script src="<?= BASE_PATH ?>assets/js/plugins/feather.min.js"></script>
+    <script src="../assets/js/plugins/popper.min.js"></script>
+    <script src="../assets/js/plugins/simplebar.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap.min.js"></script>
+    <script src="../assets/js/fonts/custom-font.js"></script>
+    <script src="../assets/js/pcoded.js"></script>
+    <script src="../assets/js/plugins/feather.min.js"></script>
 
        
     <script>
@@ -29,4 +29,11 @@
      
     <script>
       preset_change('preset-1');
+    </script>
+
+    <script>
+      const logoutSpan = document.getElementById('logout-span');
+      logoutSpan.addEventListener('click', function() {
+        window.location.href = 'https://www.google.com'; 
+      });
     </script>

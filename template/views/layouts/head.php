@@ -8,21 +8,21 @@
       content="Light Able admin and dashboard template offer a variety of UI elements and pages, ensuring your admin panel is both fast and effective."
     />
     <meta name="author" content="phoenixcoded" />
-
+    <!-- template\assets\images\favicon.svg -->
     <!-- [Favicon] icon -->
-    <link rel="icon" href="<?= BASE_PATH ?>assets/images/favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon" />
     <!-- [Google Font : Public Sans] icon -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
     <!-- [phosphor Icons] https://phosphoricons.com/ -->
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/fonts/phosphor/duotone/style.css" />
+    <link rel="stylesheet" href="../assets/fonts/phosphor/duotone/style.css" />
     <!-- [Tabler Icons] https://tablericons.com -->
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/fonts/tabler-icons.min.css" />
+    <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" />
     <!-- [Feather Icons] https://feathericons.com -->
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/fonts/feather.css" />
+    <link rel="stylesheet" href="../assets/fonts/feather.css" />
     <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome.css" />
     <!-- [Material Icons] https://fonts.google.com/icons -->
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/fonts/material.css" />
+    <link rel="stylesheet" href="../assets/fonts/material.css" />
     <!-- [Template CSS Files] -->
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/css/style.css" id="main-style-link" />
-    <link rel="stylesheet" href="<?= BASE_PATH ?>assets/css/style-preset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="../assets/css/style-preset.css" />

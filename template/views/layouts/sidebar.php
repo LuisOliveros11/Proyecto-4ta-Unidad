@@ -1,8 +1,14 @@
+<script>
+  const logoutSpan = document.getElementById('logout-span');
+  logoutSpan.addEventListener('click', function() {
+    window.location.href = 'https://www.google.com'; 
+  });
+</script>
 <!-- [ Sidebar Menu ] start -->
 <nav class="pc-sidebar">
   <div class="navbar-wrapper">
     <div class="m-header">
-      <a href="../dashboard/index.html" class="b-brand text-primary">
+      <a href="../views/home.php" class="b-brand text-primary">
         <!-- ========   Change your logo from here   ============ -->
         <img src="<?= BASE_PATH ?>assets/images/logo-dark.svg" alt="logo image" class="logo-lg" /> 
       </a>
@@ -753,7 +759,8 @@
                   <li>
                     <a class="pc-user-links">
                       <i class="ph-duotone ph-power"></i>
-                      <span>Logout</span>
+                      <span id="logout-span">Logout</span>
+
                     </a>
                   </li>
                 </ul>

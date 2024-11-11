@@ -160,7 +160,7 @@
             <i class="ph-duotone ph-lock-key"></i>
             <span>Lock Screen</span>
           </a>
-          <a href="#!" class="dropdown-item">
+          <a href="../" class="dropdown-item">
             <i class="ph-duotone ph-power"></i>
             <span>Logout</span>
           </a>
@@ -485,7 +485,7 @@
                       <span>Add account</span>
                     </span>
                   </a>
-                  <a href="#" class="dropdown-item">
+                  <a href="../" class="dropdown-item">
                     <span class="d-flex align-items-center">
                       <i class="ph-duotone ph-power"></i>
                       <span>Logout</span>
