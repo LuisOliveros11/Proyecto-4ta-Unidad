@@ -151,18 +151,18 @@ include "app/config.php";
                   </div>
                   <div class="col-md-8 d-flex align-items-center">
                     <div class="card-body py-5 px-4 p-md-5">
-                      <form action="views/home.php">
+                      <form action="app/AuthController.php" method="post">
                         <h4 class="fw-bold mb-4" style="color: #92aad0;">Log in to your account</h4>
                         <div class="form-outline mb-4">
-                          <input type="email" id="form2Example1" class="form-control"/>
+                          <input type="email" id="form2Example1" class="form-control" name="email"/>
                           <label class="form-label" for="form2Example1">Email address</label>
                         </div>
                         <div class="form-outline mb-4">
-                          <input type="password" id="form2Example2" class="form-control"/>
+                          <input type="password" id="form2Example2" class="form-control" name="pwd"/>
                           <label class="form-label" for="form2Example2">Password</label>
                         </div>
                         <div class="d-flex justify-content-end pt-1 mb-4">
-                          <button class="btn btn-primary btn-rounded" type="submit">Log in</button>
+                          <button class="btn btn-primary btn-rounded" type="submit" name="login">Log in</button>
                         </div>
                         <hr>
                         <a class="link float-end" href="javascript:void(0);" onclick="showModal()">Forgot password? Click here.</a><br>
