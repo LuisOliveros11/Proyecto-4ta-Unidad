@@ -9,6 +9,13 @@ if (isset($_POST['login'])) {
     $authController->login($email, $pwd);
 };
 
+if (isset($_POST['recuperarPwd'])) {
+    $email = $_POST['email'];
+
+    $authController = new AuthController();
+    $authController->recuperarContrasena($email);
+};
+
 class AuthController
 {
     public function login($email, $pwd)
@@ -39,6 +46,36 @@ class AuthController
         } else {
             echo "Error. Credenciales Incorrectas";
         }
+    }
+
+    public function recuperarContrasena($email){
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => 'https://crud.jonathansoto.mx/api/forgot-password',
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'POST',
+          CURLOPT_POSTFIELDS => array('email' => $email),
+        ));
+        
+        $response = curl_exec($curl);
+        $response = json_decode($response);
+        
+        curl_close($curl);
+        if(isset($response->data) && $response->code === 4){
+            header("Location: ../index.php");
+        }else{
+            echo "Error. Ingresa un correo valido";
+        }
+    }
+
+    public function logout(){
+
     }
 }
 ?>

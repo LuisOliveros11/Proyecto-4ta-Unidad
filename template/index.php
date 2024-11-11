@@ -182,13 +182,13 @@ include "app/config.php";
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h4>Recover Password</h4>
-        <form action="#">
+        <form action="app/AuthController.php" method="post">
           <div class="form-outline mb-4">
-            <input type="email" id="recoveryEmail" class="form-control"/>
+            <input type="email" id="recoveryEmail" class="form-control" name="email"/>
             <label class="form-label" for="recoveryEmail">Enter your email address</label>
           </div>
           <div class="d-flex justify-content-end pt-1 mb-4">
-            <button class="btn btn-primary btn-rounded" type="submit">Recover Password</button>
+            <button class="btn btn-primary btn-rounded" type="submit" name="recuperarPwd">Recover Password</button>
           </div>
         </form>
       </div>
