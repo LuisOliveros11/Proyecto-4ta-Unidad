@@ -8,7 +8,7 @@
 <nav class="pc-sidebar">
   <div class="navbar-wrapper">
     <div class="m-header">
-      <a href="../views/home.php" class="b-brand text-primary">
+      <a href="<?= BASE_PATH ?>views/home.php" class="b-brand text-primary">
         <!-- ========   Change your logo from here   ============ -->
         <img src="<?= BASE_PATH ?>assets/images/logo-dark.svg" alt="logo image" class="logo-lg" />
       </a>
@@ -41,18 +41,18 @@
         <li class="pc-item pc-hasmenu">
           <a href="#!" class="pc-link"><span class="pc-micon"> <i class="ph-duotone ph-layout"></i></span><span class="pc-mtext">Layouts</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
           <ul class="pc-submenu">
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-horizontal.html">Horizontal</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-vertical.html">Vertical</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-vertical-tab.html">Vertical + Tab</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-tab.html">Tab</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-2-column.html">2 Column</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-big-compact.html">Big Compact</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-compact.html">Compact</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-moduler.html">Moduler</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-creative.html">Creative</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-detached.html">Detached</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-advanced.html">Advanced</a></li>
-            <li class="pc-item"><a class="pc-link" href="../demo/layout-extended.html">Extended</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-horizontal.html">Horizontal</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-vertical.html">Vertical</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-vertical-tab.html">Vertical + Tab</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-tab.html">Tab</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-2-column.html">2 Column</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-big-compact.html">Big Compact</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-compact.html">Compact</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-moduler.html">Moduler</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-creative.html">Creative</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-detached.html">Detached</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-advanced.html">Advanced</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>demo/layout-extended.html">Extended</a></li>
           </ul>
         </li>
         <li class="pc-item pc-caption">
@@ -70,7 +70,7 @@
           </a>
         </li>
         <li class="pc-item">
-          <a href="../widget/w_user.html" class="pc-link">
+          <a href="<?= BASE_PATH ?>widget/w_user.html" class="pc-link">
             <span class="pc-micon">
               <i class="ph-duotone ph-identification-card"></i>
             </span>
@@ -117,8 +117,8 @@
             </span>
             <span class="pc-mtext">Gallery</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
           <ul class="pc-submenu">
-            <li class="pc-item"><a class="pc-link" href="../application/gallery-grid.html">Grid</a></li>
-            <li class="pc-item"><a class="pc-link" href="../application/gallery-masonry.html">Masonry</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/gallery-grid.html">Grid</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/gallery-masonry.html">Masonry</a></li>
           </ul>
         </li>
         <li class="pc-item pc-hasmenu">
@@ -687,4 +687,3 @@
     </div>
   </div>
 </nav>
-<!-- [ Sidebar Menu ] end -->
