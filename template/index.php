@@ -214,28 +214,36 @@ include "app/config.php";
   </div>
 
   <div id="registerModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeRegisterModal()">&times;</span>
-      <h4>Create an Account</h4>
-      <form action="#">
-        <div class="form-outline mb-4">
-          <input type="text" id="registerName" class="form-control" />
-          <label class="form-label" for="registerName">Full Name</label>
-        </div>
-        <div class="form-outline mb-4">
-          <input type="email" id="registerEmail" class="form-control" />
-          <label class="form-label" for="registerEmail">Email address</label>
-        </div>
-        <div class="form-outline mb-4">
-          <input type="password" id="registerPassword" class="form-control" />
-          <label class="form-label" for="registerPassword">Password</label>
-        </div>
-        <div class="d-flex justify-content-end pt-1 mb-4">
-          <button class="btn btn-primary btn-rounded" type="submit">Register</button>
-        </div>
-      </form>
-    </div>
+  <div class="modal-content">
+    <span class="close" onclick="closeRegisterModal()">&times;</span>
+    <h4>Create an Account</h4>
+    <form action="#">
+      <div class="form-outline mb-4">
+        <input type="text" id="registerFirstName" class="form-control" />
+        <label class="form-label" for="registerFirstName">First Name</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="text" id="registerLastName" class="form-control" />
+        <label class="form-label" for="registerLastName">Last Name</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="text" id="registerRole" class="form-control" />
+        <label class="form-label" for="registerRole">Job Role</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="email" id="registerEmail" class="form-control" />
+        <label class="form-label" for="registerEmail">Email Address</label>
+      </div>
+      <div class="form-outline mb-4">
+        <input type="file" id="registerPhoto" class="form-control" />
+        <label class="form-label" for="registerPhoto">Photo</label>
+      </div>
+      <div class="d-flex justify-content-end pt-1 mb-4">
+        <button class="btn btn-primary btn-rounded" type="submit">Register</button>
+      </div>
+    </form>
   </div>
+</div>
 
   <?php include "views/layouts/scripts.php" ?>
 

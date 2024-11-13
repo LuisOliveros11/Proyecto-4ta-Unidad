@@ -15,13 +15,8 @@
           </a>
         </li>
         <li class="dropdown pc-h-item d-inline-flex d-md-none">
-          <a
-            class="pc-head-link dropdown-toggle arrow-none m-0"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="false"
-            aria-expanded="false">
+          <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" aria-expanded="false">
             <i class="ph-duotone ph-magnifying-glass"></i>
           </a>
           <div class="dropdown-menu pc-h-dropdown drp-search">
@@ -47,13 +42,8 @@
     <div class="ms-auto">
       <ul class="list-unstyled">
         <li class="dropdown pc-h-item d-none d-md-inline-flex">
-          <a
-            class="pc-head-link dropdown-toggle arrow-none me-0"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="false"
-            aria-expanded="false">
+          <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" aria-expanded="false">
             <i class="ph-duotone ph-circles-four"></i>
           </a>
           <div class="dropdown-menu dropdown-qta dropdown-menu-end pc-h-dropdown">
@@ -100,13 +90,8 @@
           </div>
         </li>
         <li class="dropdown pc-h-item">
-          <a
-            class="pc-head-link dropdown-toggle arrow-none me-0"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="false"
-            aria-expanded="false">
+          <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" aria-expanded="false">
             <i class="ph-duotone ph-sun-dim"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
@@ -130,13 +115,8 @@
           </a>
         </li>
         <li class="dropdown pc-h-item">
-          <a
-            class="pc-head-link dropdown-toggle arrow-none me-0"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="false"
-            aria-expanded="false">
+          <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" aria-expanded="false">
             <i class="ph-duotone ph-diamonds-four"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
@@ -156,20 +136,15 @@
               <i class="ph-duotone ph-lock-key"></i>
               <span>Lock Screen</span>
             </a>
-            <a href="../" class="dropdown-item">
+            <a href="#" class="dropdown-item" onclick="document.getElementById('logout').submit(); return false;">
               <i class="ph-duotone ph-power"></i>
               <span>Logout</span>
             </a>
           </div>
         </li>
         <li class="dropdown pc-h-item">
-          <a
-            class="pc-head-link dropdown-toggle arrow-none me-0"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="false"
-            aria-expanded="false">
+          <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" aria-expanded="false">
             <i class="ph-duotone ph-bell"></i>
             <span class="badge bg-success pc-h-badge">3</span>
           </a>
@@ -184,7 +159,8 @@
                 </li>
               </ul>
             </div>
-            <div class="dropdown-body text-wrap header-notification-scroll position-relative" style="max-height: calc(100vh - 235px)">
+            <div class="dropdown-body text-wrap header-notification-scroll position-relative"
+              style="max-height: calc(100vh - 235px)">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <p class="text-span">Today</p>
@@ -201,7 +177,8 @@
                           <span class="text-sm">2 min ago</span>
                         </div>
                       </div>
-                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span></p>
+                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate">Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s.</span></p>
                       <span class="badge bg-light-primary border border-primary me-1 mt-1">web design</span>
                       <span class="badge bg-light-warning border border-warning me-1 mt-1">Dashobard</span>
                       <span class="badge bg-light-success border border-success me-1 mt-1">Design System</span>
@@ -224,7 +201,8 @@
                           <span class="text-sm">1 hour ago</span>
                         </div>
                       </div>
-                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span></p>
+                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate">Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s.</span></p>
                     </div>
                   </div>
                 </li>
@@ -245,7 +223,8 @@
                           <span class="text-sm">12 hour ago</span>
                         </div>
                       </div>
-                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate"><strong> Jonny aber </strong> invites to join the challenge</span></p>
+                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate"><strong> Jonny aber
+                          </strong> invites to join the challenge</span></p>
                       <button class="btn btn-sm rounded-pill btn-outline-secondary me-2">Decline</button>
                       <button class="btn btn-sm rounded-pill btn-primary">Accept</button>
                     </div>
@@ -267,7 +246,8 @@
                           <span class="text-sm">2 hour ago</span>
                         </div>
                       </div>
-                      <p class="position-relative mt-1 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                      <p class="position-relative mt-1 mb-2">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's standard
                         dummy text ever since the 1500s.</p>
                     </div>
                   </div>
@@ -275,7 +255,8 @@
                 <li class="list-group-item">
                   <div class="d-flex">
                     <div class="flex-shrink-0">
-                      <img src="<?= BASE_PATH ?>assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar avtar avtar-s" />
+                      <img src="<?= BASE_PATH ?>assets/images/user/avatar-2.jpg" alt="user-image"
+                        class="user-avtar avtar avtar-s" />
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <div class="d-flex">
@@ -286,7 +267,8 @@
                           <span class="text-sm">2 min ago</span>
                         </div>
                       </div>
-                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span></p>
+                      <p class="position-relative mt-1 mb-2"><br /><span class="text-truncate">Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s.</span></p>
                       <button class="btn btn-sm rounded-pill btn-outline-secondary me-2">Decline</button>
                       <button class="btn btn-sm rounded-pill btn-primary">Accept</button>
                     </div>
@@ -308,7 +290,8 @@
                           <span class="text-sm">5 hour ago</span>
                         </div>
                       </div>
-                      <p class="position-relative mt-1 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                      <p class="position-relative mt-1 mb-2">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's standard
                         dummy text ever since the 1500s.</p>
                     </div>
                   </div>
@@ -328,14 +311,8 @@
           </div>
         </li>
         <li class="dropdown pc-h-item header-user-profile">
-          <a
-            class="pc-head-link dropdown-toggle arrow-none me-0"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-haspopup="false"
-            data-bs-auto-close="outside"
-            aria-expanded="false">
+          <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
             <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar" />
           </a>
           <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
@@ -348,7 +325,8 @@
                   <li class="list-group-item">
                     <div class="d-flex align-items-center">
                       <div class="flex-shrink-0">
-                        <img src="<?= BASE_PATH ?>assets/images/user/avatar-2.jpg" alt="user-image" class="wid-50 rounded-circle" />
+                        <img src="<?= BASE_PATH ?>assets/images/user/avatar-2.jpg" alt="user-image"
+                          class="wid-50 rounded-circle" />
                       </div>
                       <div class="flex-grow-1 mx-3">
                         <h5 class="mb-0">Carson Darrin</h5>
@@ -423,7 +401,8 @@
                         <span>Dark mode</span>
                       </span>
                       <div class="form-check form-switch form-check-reverse m-0">
-                        <input class="form-check-input f-18" id="dark-mode" type="checkbox" onclick="dark_mode()" role="switch" />
+                        <input class="form-check-input f-18" id="dark-mode" type="checkbox" onclick="dark_mode()"
+                          role="switch" />
                       </div>
                     </div>
                   </li>
@@ -461,12 +440,16 @@
                         <span>Add account</span>
                       </span>
                     </a>
-                    <a href="../" class="dropdown-item">
+                    <a href="#" onclick="document.getElementById('logout').submit(); return false;"
+                      class="dropdown-item">
                       <span class="d-flex align-items-center">
                         <i class="ph-duotone ph-power"></i>
                         <span>Logout</span>
                       </span>
                     </a>
+                    <form id="logout" action="app/AuthController.php" method="post">
+                      <input type="hidden" name="logout">
+                    </form>
                   </li>
                 </ul>
               </div>
