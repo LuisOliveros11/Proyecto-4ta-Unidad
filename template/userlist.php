@@ -1,7 +1,11 @@
 <?php
 include "app/config.php";
+session_start();
 include "views/layouts/sidebar.php";
-include "views/layouts/head.php"
+include "views/layouts/head.php";
+include "app/UserController.php";
+$userController = new UserController();
+$usuarios = $userController->obtenerUsuarios();
 ?>
 <!doctype html>
 <html lang="en">
@@ -1279,7 +1283,9 @@ include "views/layouts/head.php"
                                                 <span class="badge bg-light-success">Active</span>
                                                 <div class="overlay-edit">
                                                     <ul class="list-inline mb-0">
+                                                        <!-- LINK QUE SIRVE PARA EDITAR -->
                                                         <li class="list-inline-item m-0"><a href="#" class="avtar avtar-s btn btn-primary"><i class="ti ti-pencil f-18"></i></a></li>
+                                                        <!-- LINK QUE SIRVE PARA ELIMINAR -->
                                                         <li class="list-inline-item m-0"><a href="#" class="avtar avtar-s btn bg-white btn-link-danger"><i class="ti ti-trash f-18"></i></a></li>
                                                     </ul>
                                                 </div>
