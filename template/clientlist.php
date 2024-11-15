@@ -29,6 +29,7 @@
                             <div class="page-header-title">
                                 <h2 class="mb-0">Client List</h2>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -36,8 +37,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card table-card">
-                        <div class="card-header">
-                            <h5>Client list</h5>
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Client List</h5>
+                            <button class="btn btn-primary">Add Client</button>
                         </div>
                         <div class="datatable-top">
                             <div class="datatable-dropdown">
