@@ -4,13 +4,20 @@
 <head>
   <?php
   include "app/config.php";
+  session_start();
   include "views/layouts/sidebar.php";
   include "views/layouts/head.php";
   include "views/layouts/navbar.php";
+  include "app/UserController.php";
+  $userController = new UserController();
+  $detallesUsuario = $userController->obtenerDetallesUsuarioEspecifico();
   ?>
 </head>
+  
 
-<body data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme="light">
+<body data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="ltr"
+  data-pc-theme="light">
+
   <div class="pc-container">
     <div class="pc-content">
       <div class="page-header">
@@ -32,8 +39,7 @@
                 <div class="card-body position-relative">
                   <div class="text-center mt-3">
                     <div class="chat-avtar d-inline-flex mx-auto">
-                      <img
-                        class="rounded-circle img-fluid wid-90 img-thumbnail"
+                      <img class="rounded-circle img-fluid wid-90 img-thumbnail"
                         src="https://i.pinimg.com/736x/ac/e4/0e/ace40e950129d1e9084fb80dd7a28521.jpg"
                         alt="User image" />
                       <i class="chat-badge bg-success me-2 mb-2"></i>
@@ -55,18 +61,10 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="nav flex-column nav-pills list-group list-group-flush account-pills mb-0"
-                  id="user-set-tab"
-                  role="tablist"
-                  aria-orientation="vertical">
-                  <a
-                    class="nav-link list-group-item list-group-item-action active"
-                    id="user-set-profile-tab"
-                    data-bs-toggle="pill"
-                    href="#user-set-profile"
-                    role="tab"
-                    aria-controls="user-set-profile"
+                <div class="nav flex-column nav-pills list-group list-group-flush account-pills mb-0" id="user-set-tab"
+                  role="tablist" aria-orientation="vertical">
+                  <a class="nav-link list-group-item list-group-item-action active" id="user-set-profile-tab"
+                    data-bs-toggle="pill" href="#user-set-profile" role="tab" aria-controls="user-set-profile"
                     aria-selected="true">
                     <span class="f-w-500"><i class="ph-duotone ph-user-circle m-r-10"></i>Profile Overview</span>
                   </a>
@@ -94,7 +92,8 @@
             </div>
             <div class="col-lg-7 col-xxl-9">
               <div class="tab-content" id="user-set-tabContent">
-                <div class="tab-pane fade show active" id="user-set-profile" role="tabpanel" aria-labelledby="user-set-profile-tab">
+                <div class="tab-pane fade show active" id="user-set-profile" role="tabpanel"
+                  aria-labelledby="user-set-profile-tab">
                 </div>
                 <div class="card">
                   <div class="card-header">
@@ -185,7 +184,8 @@
                 <div class="card">
                   <div class="card-body text-end">
                     <button class="btn btn-primary">Update Profile</button>
-                    <button class="btn btn-danger" style="margin-right: 10px;">Delete Account</button> <!-- APONER UN MODAL DE "SEGURO QUE" -->
+                    <button class="btn btn-danger" style="margin-right: 10px;">Delete Account</button>
+                    <!-- APONER UN MODAL DE "SEGURO QUE" -->
                   </div>
                 </div>
               </div>
