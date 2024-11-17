@@ -4,9 +4,13 @@
 <head>
     <?php
     include "app/config.php";
+    session_start();
     include "views/layouts/sidebar.php";
     include "views/layouts/head.php";
     include "views/layouts/navbar.php";
+    include "app/ClientController.php";
+    $clientController = new ClientController();
+    $clientes = $clientController->obtenerClientes();
     ?>
 
 </head>

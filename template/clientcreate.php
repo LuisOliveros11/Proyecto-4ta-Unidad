@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <div class="row justify-content-between align-items-center mb-3 g-3">
                                 <div class="col-sm-auto">
-                                    <form action="#" method="post">
+                                    <form action="app/ClientController.php" method="post">
                                         <h3>Add client</h3>
 
                                         <label for="client_id">ID Cliente:</label>
@@ -59,7 +59,7 @@
                                         <label for="client_level">Client Level:</label>
                                         <input type="text" id="client_level" name="client_level" value="" readonly><br><br>
 
-                                        <input type="submit" value="Add Client">
+                                        <input type="submit" name="addClient" value="Add Client">
                                     </form>
 
                                 </div>
