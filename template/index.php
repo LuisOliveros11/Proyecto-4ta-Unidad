@@ -239,7 +239,7 @@ include "app/config.php";
         <label class="form-label" for="registerPhoto">Photo</label>
       </div>
       <div class="d-flex justify-content-end pt-1 mb-4">
-        <button class="btn btn-primary btn-rounded" type="submit">Register</button>
+        <button class="btn btn-primary btn-rounded" type="submit" name="add">Register</button>
       </div>
     </form>
   </div>
