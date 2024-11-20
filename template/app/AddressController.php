@@ -184,7 +184,7 @@ class AddressController
         if (isset($response->message) && $response->code === 2) {
             return $response->data;
         } else {
-            echo "Error al obtener direccion";
+            echo "Error al eliminar direccion";
         }
     }
 }
