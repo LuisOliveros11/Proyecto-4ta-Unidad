@@ -22,7 +22,7 @@
         </li>
 
         <li class="pc-item">
-          <a href="<?= BASE_PATH ?>widget/w_user.html" class="pc-link">
+          <a href="<?= BASE_PATH ?>profile.php" class="pc-link">
             <span class="pc-micon">
               <i class="ph-duotone ph-identification-card"></i>
             </span>
@@ -31,7 +31,7 @@
         </li>
 
         <li class="pc-item pc-hasmenu">
-          <a href="#!" class="pc-link">
+          <a href="<?= BASE_PATH ?>views/products/index.php" class="pc-link">
             <span class="pc-micon">
               <i class="ph-duotone ph-shopping-cart"></i>
             </span>
@@ -44,7 +44,7 @@
           </a>
           <ul class="pc-submenu">
             <li class="pc-item">
-              <a class="pc-link" href="<?= BASE_PATH ?>application/ecom_product.html">Product</a>
+              <a class="pc-link" href="<?= BASE_PATH ?>views/products/index.php">Product</a>
             </li>
             <li class="pc-item">
               <a class="pc-link" href="<?= BASE_PATH ?>application/ecom_product-details.html">Product details</a>
@@ -134,11 +134,11 @@
             </span>
           </a>
           <ul class="pc-submenu">
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/account-profile.html">Account Profile</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/social-media.html">Social Media</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/user-card.html">User Card</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/user-list.html">User List</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>application/team.html">Team</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>profile.php">Account Profile</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>clienteview.php">Social Media</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>clientcreate.php">Add client</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>userlist.php">User List</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>invoicelist.php">Team</a></li>
           </ul>
         </li>
 
