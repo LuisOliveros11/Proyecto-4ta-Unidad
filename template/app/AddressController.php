@@ -78,7 +78,7 @@ class AddressController
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array('first_name' => 'juanito', 'last_name' => 'leon', 'street_and_use_number' => '16 de septiembre #123', 'postal_code' => '23000', 'city' => 'La Paz', 'province' => 'Baja California Sur', 'phone_number' => '6120000000', 'is_billing_address' => '1', 'client_id' => '1'),
+            CURLOPT_POSTFIELDS => array('first_name' => $first_name, 'last_name' => $last_name, 'street_and_use_number' => $street_and_use_number, 'postal_code' => $postal_code, 'city' => $city, 'province' => $province, 'phone_number' => $phone_number, 'is_billing_address' => $is_billing_address, 'client_id' => $client_id),
             CURLOPT_HTTPHEADER => array(
                 "Authorization: Bearer " . $_SESSION['data']->token
             ),
@@ -182,7 +182,7 @@ class AddressController
         curl_close($curl);
 
         if (isset($response->message) && $response->code === 2) {
-            return $response->data;
+            header("Location: ../home");
         } else {
             echo "Error al eliminar direccion";
         }
