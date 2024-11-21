@@ -90,7 +90,7 @@ class ProductController
         curl_close($curl);
 
         if ($response->code === 4) {
-            header("Location: ../home");
+            header("Location: ../products.php");
         } else {
             echo "Error. No se añadio al producto";
         }
@@ -122,7 +122,7 @@ class ProductController
         curl_close($curl);
 
         if ($response->code === 4) {
-            header("Location: ../home");
+            header("Location: ../productsDetails.php");
         } else {
             echo "Error. No se editó al producto";
         }
@@ -151,7 +151,7 @@ class ProductController
         curl_close($curl);
 
         if ($response->code === 2) {
-            header("Location: ../home");
+            header("Location: ../products.php");
         } else {
             echo "Error. No se eliminó al producto";
         }

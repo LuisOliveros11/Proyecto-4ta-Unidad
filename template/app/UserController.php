@@ -118,7 +118,7 @@ class UserController
       curl_close($curl);
 
       if ($response->code === 4) {
-        header("Location: userlist.php");
+        header("Location: ../userlist.php");
       } else {
         echo "Error. No se editó al usuario";
       }

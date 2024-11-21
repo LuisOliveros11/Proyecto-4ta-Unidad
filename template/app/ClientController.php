@@ -77,7 +77,7 @@ class ClientController
         curl_close($curl);
 
         if (isset($response->message) && $response->code === 4) {
-            header("Location: clientlist.php");
+            header("Location: ../clientlist.php");
         } else {
             echo "Error al crear cliente";
         }
@@ -109,7 +109,7 @@ class ClientController
         curl_close($curl);
 
         if (isset($response->message) && $response->code === 4) {
-            header("Location: clientlist.php");
+            header("Location: ../clientlist.php");
         } else {
             echo "Error al editar cliente";
         }
