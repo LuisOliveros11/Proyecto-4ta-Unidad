@@ -1,3 +1,8 @@
 <?php
 
-define('BASE_PATH', 'http://localhost/Proyecto-4ta-Unidad-0fc090d09bab350bd5b2a0c24d65f3cdb071461a/template/');
+define('BASE_PATH', 'http://localhost/Proyecto-4ta-Unidad/template/');
+
+require_once "UserController.php";
+$userController = new UserController();
+$detallesUsuario = $userController->obtenerDetallesUsuarioEspecifico();
+$_SESSION['detallesUsuario'] = $detallesUsuario;

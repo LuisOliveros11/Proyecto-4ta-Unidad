@@ -4,13 +4,9 @@
 <head>
   <?php
   include "app/config.php";
-  session_start();
   include "views/layouts/sidebar.php";
   include "views/layouts/head.php";
   include "views/layouts/navbar.php";
-  require_once "app/UserController.php";
-  $userController = new UserController();
-  $detallesUsuario = $userController->obtenerDetallesUsuarioEspecifico();
   ?>
 </head>
   
