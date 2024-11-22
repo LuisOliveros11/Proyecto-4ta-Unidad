@@ -447,7 +447,7 @@
                         <span>Logout</span>
                       </span>
                     </a>
-                    <form id="logout" action="../../../../Proyecto-4ta-Unidad/template/app/AuthController.php" method="post">
+                    <form id="logout" action="app/AuthController.php" method="post">
                       <input type="hidden" name="logout">
                     </form>
                   </li>
