@@ -22,6 +22,8 @@ $todosUsuarios = $_SESSION['todosUsuarios'];
 <head>
     <title>User List</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Incluir Bootstrap (si no lo has incluido en otro archivo) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +74,7 @@ $todosUsuarios = $_SESSION['todosUsuarios'];
                                                     <td><?= htmlspecialchars($usuario->id) ?></td>
                                                     <td>
                                                         <div class="d-inline-block align-middle">
-                                                            <img src="<?php echo $detallesUsuario->avatar; ?>" 
+                                                            <img src="<?php echo $usuario->avatar; ?>" 
                                                                 alt="user image" 
                                                                 class="img-radius align-top m-r-15" 
                                                                 style="width: 40px" />
@@ -88,18 +90,61 @@ $todosUsuarios = $_SESSION['todosUsuarios'];
                                                     <td>
                                                         <ul class="list-inline mb-0">
                                                             <li class="list-inline-item m-0">
-                                                                <a href="edit_user.php?id=<?= htmlspecialchars($usuario->id) ?>" class="btn btn-primary">
-                                                                    <i class="ti ti-pencil-alt"></i>
-                                                                </a>
+                                                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal<?= $usuario->id ?>">
+                                                                    <i class="ti ti-pencil-alt"></i> Edit
+                                                                </button>
                                                             </li>
                                                             <li class="list-inline-item m-0">
                                                                 <a href="delete_user.php?id=<?= htmlspecialchars($usuario->id) ?>" class="btn btn-danger">
-                                                                    <i class="ti ti-trash"></i>
+                                                                    <i class="ti ti-trash"></i> Delete
                                                                 </a>
                                                             </li>
                                                         </ul>
                                                     </td>
                                                 </tr>
+
+                                                <!-- Modal Editar Usuario -->
+                                                <div class="modal fade" id="editModal<?= $usuario->id ?>" tabindex="-1" aria-labelledby="editModalLabel<?= $usuario->id ?>" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="editModalLabel<?= $usuario->id ?>">Edit User</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form action="userlist.php" method="post">
+                                                                    <input type="hidden" name="id" value="<?= htmlspecialchars($usuario->id) ?>">
+                                                                    <div class="mb-3">
+                                                                        <label for="name<?= $usuario->id ?>" class="form-label">Name</label>
+                                                                        <input type="text" class="form-control" id="name<?= $usuario->id ?>" name="name" value="<?= htmlspecialchars($usuario->name) ?>" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="lastname<?= $usuario->id ?>" class="form-label">Lastname</label>
+                                                                        <input type="text" class="form-control" id="lastname<?= $usuario->id ?>" name="lastname" value="<?= htmlspecialchars($usuario->lastname) ?>" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="email<?= $usuario->id ?>" class="form-label">Email</label>
+                                                                        <input type="email" class="form-control" id="email<?= $usuario->id ?>" name="email" value="<?= htmlspecialchars($usuario->email) ?>" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="role<?= $usuario->id ?>" class="form-label">Role</label>
+                                                                        <input type="text" class="form-control" id="role<?= $usuario->id ?>" name="role" value="<?= htmlspecialchars($usuario->role) ?>" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="phone_number<?= $usuario->id ?>" class="form-label">Phone</label>
+                                                                        <input type="text" class="form-control" id="phone_number<?= $usuario->id ?>" name="phone_number" value="<?= htmlspecialchars($usuario->phone_number) ?>" required>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="password<?= $usuario->id ?>" class="form-label">Password</label>
+                                                                        <input type="password" class="form-control" id="password<?= $usuario->id ?>" name="password" required>
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-primary" name="editar">Save Changes</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             <?php endforeach; ?>
                                         </tbody>
                                     </table>
@@ -113,6 +158,10 @@ $todosUsuarios = $_SESSION['todosUsuarios'];
     </div>
 
     <?php include "views/layouts/footer.php"; ?>
+
+    <!-- Incluir Bootstrap JS y Popper (si no los has incluido en otro archivo) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

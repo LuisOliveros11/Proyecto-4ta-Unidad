@@ -52,7 +52,7 @@ class AuthController
 
         if (isset($response->data) && is_object($response->data)) {
             $_SESSION['data'] = $response->data;
-            header("Location: ../home");
+            header("Location: ../views/home.php");
         } else {
             echo "Error. Credenciales Incorrectas";
         }
