@@ -47,16 +47,13 @@
               <a class="pc-link" href="<?= BASE_PATH ?>views/products/index.php">Product</a>
             </li>
             <li class="pc-item">
-              <a class="pc-link" href="<?= BASE_PATH ?>application/ecom_product-details.html">Product details</a>
+              <a class="pc-link" href="<?= BASE_PATH ?>views/products/details.php">Product details</a>
             </li>
             <li class="pc-item">
-              <a class="pc-link" href="<?= BASE_PATH ?>application/ecom_product-list.html">Product List</a>
+              <a class="pc-link" href="<?= BASE_PATH ?>views/products/index.php">Product List</a>
             </li>
             <li class="pc-item">
-              <a class="pc-link" href="<?= BASE_PATH ?>application/ecom_product-add.html">Add New Product</a>
-            </li>
-            <li class="pc-item">
-              <a class="pc-link" href="<?= BASE_PATH ?>application/ecom_checkout.html">Checkout</a>
+              <a class="pc-link" href="<?= BASE_PATH ?>views/products/create.php">Add New Product</a>
             </li>
           </ul>
         </li>
@@ -74,7 +71,7 @@
           </a>
           <ul class="pc-submenu">
             <li class="pc-item">
-              <a class="pc-link" href="../admins/helpdesk-dashboard.html">Dashboard</a>
+              <a class="pc-link" href="<?= BASE_PATH ?>views/home.php">Dashboard</a>
             </li>
             <li class="pc-item pc-hasmenu">
               <a href="#!" class="pc-link">
@@ -87,25 +84,25 @@
               </a>
               <ul class="pc-submenu">
                 <li class="pc-item">
-                  <a class="pc-link" href="<?= BASE_PATH ?>admins/helpdesk-create-ticket.html">Create</a>
+                  <a class="pc-link" href="<?= BASE_PATH ?>cupon.php">Create</a>
                 </li>
                 <li class="pc-item">
-                  <a class="pc-link" href="<?= BASE_PATH ?>admins/helpdesk-ticket.html">List</a>
+                  <a class="pc-link" href="<?= BASE_PATH ?>ordenes.php">List</a>
                 </li>
                 <li class="pc-item">
-                  <a class="pc-link" href="<?= BASE_PATH ?>admins/helpdesk-ticket-details.html">Details</a>
+                  <a class="pc-link" href="<?= BASE_PATH ?>cupon.php">Details</a>
                 </li>
               </ul>
             </li>
             <li class="pc-item">
-              <a class="pc-link" href="<?= BASE_PATH ?>admins/helpdesk-customer.html">Customer</a>
+              <a class="pc-link" href="<?= BASE_PATH ?>clienteview.php">Customer</a>
             </li>
           </ul>
         </li>
         <li class="pc-item pc-hasmenu">
           <a href="#!" class="pc-link">
             <span class="pc-micon"><i class="ph-duotone ph-newspaper"></i></span>
-            <span class="pc-mtext">Invoice 2</span>
+            <span class="pc-mtext">Invoice</span>
             <span class="pc-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
                 <polyline points="9 18 15 12 9 6"></polyline>
@@ -113,10 +110,7 @@
             </span>
           </a>
           <ul class="pc-submenu">
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>admins/invoice-create.html">Create</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>admins/invoice-view.html">Details</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>admins/invoice-list.html">List</a></li>
-            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>admins/invoice-edit.html">Edit</a></li>
+            <li class="pc-item"><a class="pc-link" href="<?= BASE_PATH ?>invoicelist.php">List</a></li>
           </ul>
         </li>
 
