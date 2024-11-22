@@ -8,7 +8,7 @@
   include "views/layouts/sidebar.php";
   include "views/layouts/head.php";
   include "views/layouts/navbar.php";
-  include "app/UserController.php";
+  require_once "app/UserController.php";
   $userController = new UserController();
   $detallesUsuario = $userController->obtenerDetallesUsuarioEspecifico();
   ?>
@@ -39,12 +39,11 @@
                 <div class="card-body position-relative">
                   <div class="text-center mt-3">
                     <div class="chat-avtar d-inline-flex mx-auto">
-                      <img class="rounded-circle img-fluid wid-90 img-thumbnail"
-                        src="https://i.pinimg.com/736x/ac/e4/0e/ace40e950129d1e9084fb80dd7a28521.jpg"
-                        alt="User image" />
+                    <img class="rounded-circle img-fluid wid-90 img-thumbnail"
+                        src="<?php echo $detallesUsuario->avatar; ?>" alt="User image" />
                       <i class="chat-badge bg-success me-2 mb-2"></i>
                     </div>
-                    <h5 class="mb-0">William Bond</h5>
+                    <h5 class="mb-0"><?php echo $detallesUsuario->name . " " . $detallesUsuario->lastname; ?></h5>
                     <div class="row g-3">
                       <div class="col-4">
                         <h5 class="mb-0">86</h5>
@@ -77,15 +76,15 @@
                 <div class="card-body position-relative">
                   <div class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
                     <p class="mb-0 text-muted me-1">Email</p>
-                    <p class="mb-0">anshan@gmail.com</p>
+                    <h5 class="mb-0"><?php echo $detallesUsuario->email?></h5>
                   </div>
                   <div class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
                     <p class="mb-0 text-muted me-1">Role</p>
-                    <p class="mb-0">Admin</p>
+                    <h5 class="mb-0"><?php echo $detallesUsuario->role?></h5>
                   </div>
                   <div class="d-inline-flex align-items-center justify-content-between w-100">
                     <p class="mb-0 text-muted me-1">Phone</p>
-                    <p class="mb-0">aqui va el numero</p>
+                    <h5 class="mb-0"><?php echo $detallesUsuario->phone_number?></h5>
                   </div>
                 </div>
               </div>
@@ -105,11 +104,11 @@
                         <div class="row">
                           <div class="col-md-6">
                             <p class="mb-1 text-muted">Name</p>
-                            <p class="mb-0">Anshan Handgun</p>
+                            <h5 class="mb-0"><?php echo $detallesUsuario->name?></h5>
                           </div>
                           <div class="col-md-6">
                             <p class="mb-1 text-muted">Last Name</p>
-                            <p class="mb-0"> chicharron gonzales </p>
+                            <h5 class="mb-0"><?php echo $detallesUsuario->lastname?></h5>
                           </div>
                         </div>
                       </li>
@@ -117,11 +116,11 @@
                         <div class="row">
                           <div class="col-md-6">
                             <p class="mb-1 text-muted">Email</p>
-                            <p class="mb-0">anshan.dh81@gmail.com</p>
+                            <h5 class="mb-0"><?php echo $detallesUsuario->email?></h5>
                           </div>
                           <div class="col-md-6">
                             <p class="mb-1 text-muted">Role</p>
-                            <p class="mb-0"> Admin </p>
+                            <h5 class="mb-0"><?php echo $detallesUsuario->role?></h5>
                           </div>
                         </div>
                       </li>
@@ -129,11 +128,11 @@
                         <div class="row">
                           <div class="col-md-6">
                             <p class="mb-1 text-muted">Created At</p>
-                            <p class="mb-0">13 - 04 - 2005 </p>
+                            <h5 class="mb-0"><?php echo $detallesUsuario->created_at?></h5>
                           </div>
                           <div class="col-md-6">
-                            <p class="mb-1 text-muted">Updated at</p>
-                            <p class="mb-0"> 13- 04 - 2025 </p>
+                            <p class="mb-1 text-muted">Updated At</p>
+                            <h5 class="mb-0"><?php echo $detallesUsuario->updated_at?></h5>
                           </div>
                         </div>
                       </li>
